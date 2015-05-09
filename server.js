@@ -1,6 +1,7 @@
 var ecstatic = require('ecstatic');
 var split = require('split2');
 var through = require('through2');
+var crypto = require('crypto');
 
 var st = ecstatic(__dirname + '/public');
 var http = require('http');
@@ -9,11 +10,38 @@ server.listen(5000, function () {
     console.log('http://localhost:' + server.address().port);
 });
 
+var streams = {};
 var wsock = require('websocket-stream');
 wsock.createServer({ server: server }, function (stream) {
+    var id = crypto.randomBytes(16).toString('hex');
+    streams[id] = stream;
+    var ended = false;
+    
     stream.pipe(split()).pipe(through(function (buf, enc, next) {
-        var parts = buf.toString().split(',');
-        console.log(parts);
+        if (ended) return;
+        reset();
+        
+        var line = buf.toString();
+        Object.keys(streams).forEach(function (key) {
+            if (key === id) return;
+            try { streams[key].write(line + '\n') }
+            catch (e) {}
+        });
         next();
     }));
+    
+    var to = setTimeout(onend, 3 * 60 * 1000);
+    stream.once('end', onend);
+    stream.once('close', onend);
+    stream.on('error', onend);
+    
+    function onend () {
+        ended = true;
+        clearTimeout(to);
+        delete streams[id];
+    }
+    function reset () {
+        clearTimeout(to);
+        to = setTimeout(onend, 3 * 60 * 1000);
+    }
 });
