@@ -19,7 +19,6 @@ wsock.createServer({ server: server }, function (stream) {
     
     stream.pipe(split()).pipe(through(function (buf, enc, next) {
         if (ended) return;
-        reset();
         
         var line = buf.toString();
         Object.keys(streams).forEach(function (key) {
@@ -30,18 +29,12 @@ wsock.createServer({ server: server }, function (stream) {
         next();
     }));
     
-    var to = setTimeout(onend, 3 * 60 * 1000);
     stream.once('end', onend);
     stream.once('close', onend);
     stream.on('error', onend);
     
     function onend () {
         ended = true;
-        clearTimeout(to);
         delete streams[id];
-    }
-    function reset () {
-        clearTimeout(to);
-        to = setTimeout(onend, 3 * 60 * 1000);
     }
 });
