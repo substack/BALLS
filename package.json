@@ -1,5 +1,5 @@
 {
-  "name": "balls",
+  "name": "BALLS",
   "version": "1.0.0",
   "description": "BALLS FITNESS APPLICATion TRACKING FORHEALT",
   "main": "browser.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/balls.git"
+    "url": "git://github.com/substack/BALLS.git"
   },
   "keywords": [
     "IOT",
@@ -36,7 +36,7 @@
   "author": "substack",
   "license": "LOL",
   "bugs": {
-    "url": "https://github.com/substack/balls/issues"
+    "url": "https://github.com/substack/BALLS/issues"
   },
-  "homepage": "https://github.com/substack/balls#readme"
+  "homepage": "https://github.com/substack/BALLS#readme"
 }
