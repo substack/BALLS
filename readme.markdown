@@ -1,31 +1,29 @@
 # BALLS
 
-A FITNESS TRAInING PRODUCT FOR BUSY LIFES THAT
-WILL iNTERNET YOUR THINGS AS YOU QUANTIFY YOUR SELF
+An internet of things fitness training product for busy people. 
 
 ![BALLS](website/balls1.gif)
 ![BALLS](website/balls2.gif)
 ![BALLS](website/balls3.gif)
 
-# FEATUReS
+# Features
 
-* FItBIT
-* APPLE WATCh
-* FOR YOUR HEATLTH
+* Fitbit
+* Apple Watch
+* Health
 
-# HOW IT WORKS
+# How it Works
 
-YOU KICK THE BaLL AND IT SAYs "BALLS" lOL.
+Kick the ball and it will display "BALLS".
 
-# HOW WE MONETIZE
+# Monetization Strategy
 
-SELL THE DATa TO SUm1 LOL DONKARE
-MARKETERS AND INSURANCE COS IDUNNO
+Sell valuable user health data to insurance companies and marketers.
 
-# AWARDS
+# Awards
 
-[PARTICIPANT](https://stupidhackathon.github.io/)
+[Participant](https://stupidhackathon.github.io/)
 
-# VC
+# Investors
 
-WE JUST RAISED 500 MILLN DOLLR
+We just raised $500 million.
