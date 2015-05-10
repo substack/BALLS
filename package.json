@@ -1,0 +1,40 @@
+{
+  "name": "balls",
+  "version": "1.0.0",
+  "description": "BALLS FITNESS APPLICATion TRACKING FORHEALT",
+  "main": "browser.js",
+  "dependencies": {
+    "split2": "^0.2.1",
+    "ecstatic": "^0.7.5",
+    "through2": "^0.6.5",
+    "websocket-stream": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/balls.git"
+  },
+  "keywords": [
+    "IOT",
+    "INTERNET",
+    "OF",
+    "THINGS",
+    "FITNESS",
+    "HEALTH",
+    "TRACKING",
+    "FOR",
+    "YOUR",
+    "HEATLH",
+    "APP"
+  ],
+  "author": "substack",
+  "license": "LOL",
+  "bugs": {
+    "url": "https://github.com/substack/balls/issues"
+  },
+  "homepage": "https://github.com/substack/balls#readme"
+}
