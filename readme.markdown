@@ -3,9 +3,9 @@
 A FITNESS TRAInING PRODUCT FOR BUSY LIFES THAT
 WILL iNTERNET YOUR THINGS AS YOU QUANTIFY YOUR SELF
 
-![BALLS](balls1.gif)
-![BALLS](balls2.gif)
-![BALLS](balls3.gif)
+![BALLS](website/balls1.gif)
+![BALLS](website/balls2.gif)
+![BALLS](website/balls3.gif)
 
 # FEATUReS
 
