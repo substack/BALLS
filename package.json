@@ -12,7 +12,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "browserify browser.js | uglifyjs -cm | tee public/bundle.js | gzip > public/bundle.js.gz",
+    "watch": "watchify browser.js -dv -o 'tee public/bundle.js | gzip > public/bundle.js.gz'"
   },
   "repository": {
     "type": "git",
